@@ -88,3 +88,8 @@ a:link,a:visited,a:hover,a:active{
   background-color: #fff;
   font-size: 16px;
 }
+.lt_content .pic_left,
+.lt_content .pic_right{
+  width: 45%;
+  height: 400px;
+}
