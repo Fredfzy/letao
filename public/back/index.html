@@ -11,7 +11,7 @@
 <body>
 <div class="lt_aside">
   <div class="brand">
-    <a href="javascript:;">黑马14期</a>
+    <a href="index.html">黑马14期</a>
   </div>
   <div class="user">
     <img src="images/头像.jpg" alt=""/>
@@ -19,7 +19,7 @@
   </div>
   <div class="nav">
     <ul>
-      <li><a href="user.html" class="now"><span class="glyphicon glyphicon-user"></span>用户管理</a></li>
+      <li><a href="user.html" class=""><span class="glyphicon glyphicon-user"></span>用户管理</a></li>
       <li><a href="javascript:;"><span class="glyphicon glyphicon-list"></span>分类管理</a>
       <div class="child" style="display: none">
         <a href="first.html">一级分类</a>
@@ -31,7 +31,38 @@
   </div>
 </div>
 <div class="lt_main">
+  <div class="lt_header">
+    <a href="javascript:;" class="pull-left icon-menu"><span class="glyphicon glyphicon-align-justify"></span></a>
+    <a href="javascript:;" class="pull-right icon-logout"><span class="glyphicon glyphicon-log-out"></span></a>
+  </div>
+  <div class="container-fluid">
+    <!--面包屑导航-->
+    <ol class="breadcrumb">
+      <li><a href="#">管理系统</a></li>
+      <li class="active">首页</li>
+    </ol>
+    <!--内容区-->
+    <div class="lt_content"></div>
+  </div>
 </div>
+<!--模态框-->
+<div class="modal fade" tabindex="-1" id="logoutModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">温馨提示:</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-danger"><span class="glyphicon glyphicon-info-sign"></span> 你确定退出后台管理系统吗?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn_logout">确定</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>

@@ -21,6 +21,11 @@ a:link,a:visited,a:hover,a:active{
   height: 100%;
   background-color: #222d32;
   position: absolute;
+  left: 0;
+  transition: all 1s;
+}
+.lt_aside.now{
+  left:-180px;
 }
 .lt_aside .brand a {
   height: 50px;
@@ -63,4 +68,23 @@ a:link,a:visited,a:hover,a:active{
 }
 .lt_aside .child a{
   padding-left: 50px;
+}
+
+
+.lt_main{
+  padding-left: 180px;
+  transition: all 1s;
+}
+.lt_main.now{
+  padding-left: 0;
+}
+.lt_header{
+  height: 50px;
+  background-color: #3c8dbc;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+.lt_header span{
+  background-color: #fff;
+  font-size: 16px;
 }
