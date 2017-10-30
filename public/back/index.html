@@ -2,9 +2,42 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title></title>
+  <title>乐淘管理系统-登录</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.min.css"/>
+  <link rel="stylesheet" href="lib/nprogress/nprogress.css"/>
+  <link rel="stylesheet" href="css/common.css"/>
 </head>
 <body>
-  <h1>我说是谁</h1>
+<div class="lt_aside">
+  <div class="brand">
+    <a href="javascript:;">黑马14期</a>
+  </div>
+  <div class="user">
+    <img src="images/头像.jpg" alt=""/>
+    <p>超级管理员</p>
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="user.html" class="now"><span class="glyphicon glyphicon-user"></span>用户管理</a></li>
+      <li><a href="javascript:;"><span class="glyphicon glyphicon-list"></span>分类管理</a>
+      <div class="child" style="display: none">
+        <a href="first.html">一级分类</a>
+        <a href="second.html">二级分类</a>
+      </div>
+      </li>
+      <li><a href="product.html"><span class="glyphicon glyphicon-tags"></span>商品管理</a></li>
+    </ul>
+  </div>
+</div>
+<div class="lt_main">
+</div>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="lib/nprogress/nprogress.js"></script>
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>
