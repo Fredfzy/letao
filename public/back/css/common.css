@@ -97,3 +97,6 @@ a:link,a:visited,a:hover,a:active{
   width: 45%;
   height: 400px;
 }
+.lt_content td{
+  text-align: center;
+}
