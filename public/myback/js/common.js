@@ -1,0 +1,50 @@
+/**
+ * Created by asus on 2017/10/29.
+ */
+//判断用户是否是登录页
+if(location.href.indexOf("login.html")<0){
+  $.ajax({
+    type:"get",
+    url:"/employee/checkRootLogin",
+    success:function(data){
+      if(data.error===400){
+        location.href="login.html";
+      }
+    }
+  });
+}
+//开启进度条
+$(document).ajaxStart(function () {
+  NProgress.start();
+});
+//关闭进度条
+$(document).ajaxStop(function () {
+  setTimeout(function(){
+    NProgress.done();
+  },500)
+});
+//点击分类管理显示或者隐藏二级分类
+$(".child").prev().on("click",function(){
+  $(this).next().slideToggle();
+})
+//点击侧边栏隐藏
+$(".icon-menu").on("click",function(){
+  $(".lt_aside").toggleClass("now");
+  $(".lt_main").toggleClass("now");
+})
+//公用退出功能
+$(".icon-logout").on("click",function(){
+  $("#logoutModal").modal("show");
+})
+$(".btn_logout").on("click",function(){
+  //向服务器发送一个ajax请求，服务器清除session
+  $.ajax({
+    type:"get",
+    url:"/employee/employeeLogout",
+    success:function(data){
+      if(data.success){
+        window.location.href="login.html";
+      }
+    }
+  })
+})
