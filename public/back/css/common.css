@@ -16,6 +16,10 @@ a{
 a:link,a:visited,a:hover,a:active{
   text-decoration: none;
 }
+. lt_main .table td{
+  text-align: center;
+  vertical-align: middle;
+}
 .lt_aside{
   width: 180px;
   height: 100%;
