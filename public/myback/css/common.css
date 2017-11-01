@@ -103,3 +103,20 @@ a:link,a:visited,a:hover,a:active{
 .lt_content td{
   text-align: center;
 }
+.fileupload_box{
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  position: relative;
+}
+.fileupload_box:hover button{
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.fileupload_box input{
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+}

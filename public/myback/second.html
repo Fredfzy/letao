@@ -108,7 +108,7 @@
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="categoryName" name="categoryName" placeholder="请输入二级分类">
+            <input type="text" class="form-control" id="brandName" name="brandName" placeholder="请输入二级分类">
           </div>
           <div class="form-group">
             <div class="fileupload_box">
@@ -116,6 +116,11 @@
               <input id="fileupload" type="file" name="pic1" class="btn btn-default" data-url="/category/addSecondCategoryPic">
             </div>
 
+          </div>
+          <div class="form-group img_box">
+            <img src="images/none.png" width="100" height="100" alt="">
+            <input type="hidden" name="brandLogo" id="brandLogo">
+            <input type="hidden" name="hot" id="hot" value="0" data-url="/category/addSecondCategoryPic"/>
           </div>
         </form>
       </div>
@@ -143,6 +148,8 @@
   {{/each}}
 </script>
 <script src="lib/jquery/jquery.js"></script>
+<script src="lib/jquery-fileupload/jquery.ui.widget.js"></script>
+<script src="lib/jquery-fileupload/jquery.fileupload.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
 <script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
 <script src="lib/bootstrap-paginator/bootstrap-paginator.js"></script>
