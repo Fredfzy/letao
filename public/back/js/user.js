@@ -46,6 +46,9 @@ $(function () {
     var isDelete = $(this).parent().data("isDelete");
     isDelete = isDelete === 1 ? 0 : 1;
     //点击确定按钮，需要禁用或者启用这个用户
+
+    //off():解绑所有事件
+    //off(click):解绑点击事件
     $(".btn_confirm").off().on("click", function () {
 
       //发送ajax请求

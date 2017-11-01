@@ -155,17 +155,21 @@
           <div class="form-group">
             <div class="fileupload_box">
               <button class="btn btn-default">上传图片</button>
+              <!--multiple是为了能够多文件上传-->
+              <!--修改data-url为商品的图片上传地址-->
               <input id="fileupload" type="file" multiple name="pic1" class="btn btn-default"
                      data-url="/product/addProductPic">
             </div>
 
           </div>
 
+
+          <input type="hidden" name="statu" value="1">
           <div class="form-group img_box">
             <!--<img src="images/none.png" width="100" height="100" alt="">-->
             <!--<img src="images/none.png" width="100" height="100" alt="">-->
             <!--<img src="images/none.png" width="100" height="100" alt="">-->
-            <input type="hidden" name="brandLogo" id="brandLogo">
+            <input type="hidden" name="productLogo" id="productLogo">
           </div>
         </form>
       </div>

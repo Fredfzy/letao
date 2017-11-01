@@ -137,6 +137,22 @@
           <div class="form-group">
             <div class="fileupload_box">
               <button class="btn btn-default">上传图片</button>
+              <!--
+
+                //引包的问题：
+                //1. 必须引入jquery.js
+                //2, 需要引入jquery.ui.widget.js
+                //3. 需要引入jquery.upload.js
+
+                //品牌图片是上传 /upload/brand这个文件夹下面，所以需要保证必须要有这个目录
+
+                id:目的是为了获取
+                type:file  只有type:file才能选文件
+                name: pic1  后端通过这个name属性来获取这个文件
+                data-url: 写后端给的接口
+
+                还需要去js中初始化文件上传
+              -->
               <input id="fileupload" type="file" name="pic1" class="btn btn-default" data-url="/category/addSecondCategoryPic">
             </div>
 

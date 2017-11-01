@@ -108,7 +108,7 @@ $(function() {
 
   $form.on("success.form.bv", function (e) {
     e.preventDefault();
-    
+
     })
   $(".btn_addmodal1").on("click",function(){
     $.ajax({
