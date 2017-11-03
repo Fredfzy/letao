@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.lt_nav{
+  padding: 10px;
+}
+.lt_nav li{
+  width: 33.3%;
+  float: left;
+}
+.lt_nav img {
+  width: 100%;
+  display: block;
+}
+/*商品区*/
+.lt_content .ltem{
+  width: 48%;
+  display: block;
+  border: 1px solid #ccc;
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.lt_product{
+  padding: 10px;
+}
+.lt_product .ltem:nth-child(odd){
+  margin-right: 4%;
+}
+.lt_product .ltem span{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  color: red;
+}
+.lt_product .ltem span:nth-child(2){
+  text-decoration: line-through;
+  color: #ccc;
+}
+.lt_product .ltem button{
+  background-color: #007aff;
+  border: 1px solid #007aff;
+  color: #fff;
+}
