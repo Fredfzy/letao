@@ -13,7 +13,7 @@ $(function(){
       id:id
     },
     success:function(data){
-      console.log(data);
+      //console.log(data);
       var num=data.size.split("-");
       var sizeArray=[];
       for(var i=num[0];i<=num[1];i++){
@@ -35,5 +35,39 @@ $(function(){
       //初始化数字输入框
       mui('.lt_num').numbox()
     }
-  })
+  });
+  //尺码选择功能
+  $(".mui-scroll").on("click",".size",function(){
+    $(this).addClass("now").siblings().removeClass("now");
+  });
+
+
+  //添加购物车功能
+  $(".btn_add_cart").on("click",function(){
+    //获取数据
+    var size=$(".size.now").html();
+    var num=$(".mui-numbox-input").val();
+    if(!size){
+      mui.toast("请选择尺码");
+      return;
+    }
+    $.ajax({
+      type:"post",
+      url:"/cart/addCart",
+      data:{
+        productId:id,
+        num:num,
+        size:size
+      },
+      success:function(data){
+        if(data.success){
+          mui.toast("添加成功");
+        }
+        if(data.error===400){
+          //console.log(location.href);
+          location.href="login.html?retUrl="+location.href;
+        }
+      }
+    });
+  });
 })

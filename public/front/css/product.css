@@ -32,6 +32,10 @@
   border: 1px solid #ccc;
 }
 
+.lt_item .size.now {
+  background-color: #069;
+}
+
 .lt_num .info {
   font-size: 12px;
 }
