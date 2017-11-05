@@ -94,3 +94,25 @@ img {
   font-size: 12px;
   margin-bottom: 0;
 }
+
+
+.loading {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #069;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 200px;
+
+  animation: zhuan 1s infinite ease-in-out;
+}
+
+@keyframes zhuan {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}

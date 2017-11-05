@@ -34,8 +34,8 @@
         <!--排序div-->
         <div class="lt_sort">
           <a href="javascript:;">上架时间 <span class="fa fa-angle-down"></span></a>
-          <a href="javascript:;">价格 <span class="fa fa-angle-down"></span></a>
-          <a href="javascript:;">库存 <span class="fa fa-angle-down"></span></a>
+          <a data-type="price" href="javascript:;">价格 <span class="fa fa-angle-down"></span></a>
+          <a data-type="num" href="javascript:;">库存 <span class="fa fa-angle-down"></span></a>
           <a href="javascript:;">折扣 <span class="fa fa-angle-down"></span></a>
         </div>
 
@@ -87,7 +87,7 @@
   {{/if}}
 
   {{each data v i}}
-  <a href="#" class="item">
+  <a href="product.html?productId={{v.id}}" class="item">
     <img src="{{v.pic[0].picAddr}}" alt="">
     <p class="mui-ellipsis-2">{{v.proName}}</p>
     <p>

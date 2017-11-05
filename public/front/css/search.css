@@ -15,8 +15,8 @@
 }
 
 .lt_history .content {
-   border: 1px dashed #ccc;
- }
+  border: 1px dashed #ccc;
+}
 
 .lt_history .content li {
   height: 30px;

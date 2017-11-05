@@ -41,3 +41,34 @@
 .lt_sort a.now {
   color: darkorange;
 }
+
+
+.lt_product {
+  padding: 10px;
+}
+
+.lt_product .item {
+  width: 48%;
+  border: 1px solid #ccc;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.lt_product .item p {
+  margin-top: 10px;
+  height: 40px;
+}
+
+.lt_product .item:nth-child(odd){
+  margin-right: 4%;
+}
+
+.lt_product .item p span:first-child {
+  color: red;
+}
+
+.lt_product .item p span:last-child {
+  text-decoration: line-through;
+}
